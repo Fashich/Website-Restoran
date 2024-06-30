@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Alibaba</title>
+    <script src="https//unpkg.cpm//typed.js@2.0.15/dist/typed.umd.js"></script>
+    <style>
+        body {
+            background-color: rgba(228, 209, 209, 0.9);
+            background-size: cover;
+            overflow-x: hidden;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .navbar {
+            width: 90%;
+            background-color: rgba(179, 153, 153, 0.9);
+            background-size: cover;
+            height: 95px;
+            position: sticky;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 0 20px ;
+            margin-left: 50px;
+            margin-top: 20px;
+            z-index: 1000;
+            animation: AtaskeBawah 5s ease;
+        }
+                
+        @keyframes AtaskeBawah {
+          0% {
+            opacity: 1;
+            transform: translateY(-150px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0px);
+          }
+        }
+        .text-judul-restoran-alibaba {
+                font-size: 20px;
+                max-width: 330px;
+                justify-content: left;
+                text-align: left;
+                margin-right: 20px;
+                top: 20px;
+                margin-bottom: 18px;
+                -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+                -webkit-text-stroke-width: 0.333px;
+                color: rgba(252, 2, 2, 0.899);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text-judul-restoran-alibaba span {
+    position: relative;
+    display: inline-block;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+  animation: gelombang 5s ease, showText 5s ease-in;
+  animation-delay: calc(.1s * var(--i));
+}
+@keyframes gelombang {
+  0%,40% {
+    opacity: 0%;
+    transform: translateY(0);
+    visibility: none;
+  }
+  50% {
+    opacity: 0%;
+    transform: translateY(-20px);
+  }
+  52%,100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+@keyframes showText {
+    0%,40% {
+        opacity: 0%;
+        visibility: none;
+    }
+    50% {
+        opacity: 0%;
+    }
+    52%,100% {
+        opacity: 100%;
+    }
+}
+.text-judul-i-1 {
+    margin-right: -4px;
+}
+.text-judul-i-2 {
+    margin-right: -4px;
+}
+.text-judul-i-3 {
+    margin-right: -4px;
+}
+.text-judul-i-4 {
+    margin-right: -4px;
+}
+.text-judul-i-5 {
+    margin-right: -4px;
+}
+.text-judul-i-6 {
+    margin-right: -4px;
+}
+.text-judul-i-7 {
+    margin-right: -4px;
+}
+.text-judul-i-8 {
+    margin-right: -4px;
+}
+.text-judul-i-9 {
+    margin-right: 1px;
+}
+.text-judul-i-10 {
+    margin-right: -4px;
+}
+.text-judul-i-11 {
+    margin-right: -4px;
+}
+.text-judul-i-12 {
+    margin-right: -4px;
+}
+.text-judul-i-13 {
+    margin-right: -4px;
+}
+.text-judul-i-14 {
+    margin-right: -4px;
+}
+.text-judul-i-15 {
+    margin-right: -4px;
+}
+.text-judul-i-16 {
+    margin-right: -4px;
+}
+                .slogan-restoran {
+                font-size: 18px;
+                -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+                -webkit-text-stroke-width: 0.333px;
+                color: rgba(234, 177, 91, 0.899);
+                margin-left: -30px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .slogan-restoran span {
+            inline-size: 3%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .sr-1 {
+            animation: sloganrestoran1 6.6s ease;
+        }
+        @keyframes slogan-restoran1 {
+            0% {
+                opacity: 0%;
+                transform: translateX(-80px);
+            }
+            28.785% {
+                opacity: 0%;
+                transform: translateX(-80px);
+            }
+            30.3%,100% {
+                opacity: 100%;
+                transform: translateX(0);
+            }
+        }
+        .logo-restoran {
+            display: flex;
+            align-items: center;
+            color: #ffffff
+        }
+        .logo-restoran h2 {
+            margin-left: 10px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            z-index: 999;
+        }
+        .logo-restoran img {
+            border-radius: 100%;
+            margin-right: 20px;
+            width: 70px;
+            height: 70px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.962);
+            /* animation: logo 4s ease; */
+        }
+        /* @keyframes logo {
+            0% {
+                opacity: 0%;
+                width: 0px;
+                height: 0px;
+                box-shadow: 0px 0px 0px rgaba(0, 0, 0, 0.962);
+                margin-right: 0px;
+                margin-left: 25px;
+                border-radius: 100%;
+            }
+            50% {
+                opacity: 0%;
+                width: 0px;
+                height: 0px;
+                box-shadow: 0px 0px 0px rgaba(0, 0, 0, 0.962);
+                margin-right: 0px;
+                margin-left: 25px;
+                border-radius: 100%;
+                transform: rotate(270deg);
+            }
+            100% {
+                opacity: 100%;
+                width: 70px;
+                height: 70px;
+                box-shadow: 10px 10px 20px rgaba(0, 0, 0, 0.962);
+                margin-right: 20px;
+                border-radius: 100%;
+                transform: rotate(0deg);
+            }
+        } */
+        .container a {
+            color: #ffffff;
+            padding-left: 20px; 
+            text-decoration: none; 
+            position: 0 auto;
+        }
+        a {
+            color: white;
+            padding: 10px;
+            display: inline-block;
+            margin-right: 45px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: ease-in 0.5s;
+            transform: (translateY(-95px));
+            z-index: 999;
+        }
+        a:last-child {
+            margin-right: 70px;
+        }
+        a:hover {
+            color: #888888;
+            transition: ease-in-out 0.3s;
+        }
+        .menu-button {
+            visibility: none;
+        }
+        .container-banner {
+            background-image: url("lindah-4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 550px;
+            height: 330px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            margin-left: 80px;
+            margin-top: 80px;
+            border-radius: 15px;
+            margin-right: 0;
+            z-index: 1;
+            animation: MudarkeKanan 2s ease;
+        }
+                
+        @keyframes MudarkeKanan {
+          0% {
+            opacity: 0;
+            transform: translateX(-150px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+        }
+        .container-banner-2 {
+            background-image: url("lindah-1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 550px;
+            height: 330px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            margin-left: 680px;
+            margin-top: 80px;
+            border-radius: 15px;
+            margin-right: 0;
+            z-index: 1;
+            animation: MudarkeKiri 2s ease;
+        }
+                
+        @keyframes MudarkeKiri {
+          0% {
+            opacity: 0;
+            transform: translateX(150px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+        }
+        .container-banner-3 {
+            background-image: url("lindah-2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 550px;
+            height: 330px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            margin-left: 80px;
+            margin-top: 550px;
+            border-radius: 15px;
+            margin-right: 0;
+            z-index: 1;
+            animation: MudarkeKanan 2s ease;
+        }
+        @keyframes MudarkeKanan {
+          0% {
+            opacity: 0;
+            transform: translateX(-150px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+        }
+        .container-banner-4 {
+            background-image: url("lindah-3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 550px;
+            height: 330px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            margin-left: 680px;
+            margin-top: 550px;
+            border-radius: 15px;
+            margin-right: 0;
+            z-index: 1;
+            animation: MudarkeKiri 2s ease;
+        }
+                
+        @keyframes MudarkeKiri {
+          0% {
+            opacity: 0;
+            transform: translateX(150px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+        }
+        .container-banner .container-banner-2 {
+            justify-content: center;
+            position: relative;
+        }
+        .container-banner-3 .container-banner-4 {
+            justify-content: center;
+            position: relative;
+        }
+        .nama-banner {
+            color: rgba(255, 0, 0, 0.9);
+            -webkit-text-stroke-color: rgba(255, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+            margin-left: 10px;
+            margin-top: -30px;
+                bottom: 20px;
+            z-index: 1;
+        }
+        .harga-banner {
+            margin-left: 410px;
+            margin-top: 200px;
+            color: rgba(0, 0, 0, 0.899);
+            text-decoration: line-through red;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgba(255, 255, 255, 0.921);
+            bottom: 30px;
+            border-radius: 2px;
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.947);
+            -webkit-text-stroke-width: 0.75px;
+        }
+        .nama-banner-2 {
+            color: rgba(255, 0, 0, 0.9);
+            -webkit-text-stroke-color: rgba(255, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: -30px;
+                bottom: 20px;
+            z-index: 1;
+            top: -10px;
+        }
+        .harga-banner-2 {
+            margin-left: 400px;
+            margin-top: 200px;
+            color: rgba(0, 0, 0, 0.899);
+            text-decoration: line-through red;
+            font-size: 20px;
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.947);
+            -webkit-text-stroke-width: 0.75px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgba(255, 255, 255, 0.921);
+            bottom: 30px;
+            border-radius: 2px;
+        }
+        .harga-banner-diskon {
+                position: relative;
+                margin-top: 45px;
+                bottom: 40px;
+                right: -380px;
+                font-size: 30px;
+                color: rgba(255, 255, 255, 0.899);
+                -webkit-text-stroke-color: #ffffff;
+                -webkit-text-stroke-width: 0.333px;
+                background-color: rgba(0, 0, 0, 0.755);
+                max-width: 150px;
+                padding-left: 10px;
+                text-decoration: underline rgba(255, 255, 255, 0.899);
+                border-radius: 10px;
+            }
+            .harga-banner-diskon-2 {
+                position: relative;
+                margin-top: 45px;
+                bottom: 40px;
+                right: -230px;
+                margin-left: 140px;
+                font-size: 30px;
+                color: rgba(255, 255, 255, 0.899);
+                -webkit-text-stroke-color: #ffffff;
+                -webkit-text-stroke-width: 0.333px;
+                background-color: rgba(0, 0, 0, 0.755);
+                max-width: 160px;
+                padding-left: 10px;
+                text-decoration: underline rgba(255, 255, 255, 0.899);
+                border-radius: 10px;
+            }
+            /* .Mie-Goreng-Jawa-Teks-Container-1 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x2-Mie-Goreng-Jawa-Teks-Container-1 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            /* .Es-Jeruk-Teks-Container-1 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x2-Es-Jeruk-Teks-Container-1 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            .paket-bestie {
+                color: rgba(255, 250, 250, 0.974);
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin-left: 30px;
+                background-color: rgba(0, 0, 0, 0.899);
+                max-width: 216px;
+                padding-left: 10px;
+                white-space: nowrap;
+                border-radius: 10px;
+                /* -webkit-text-stroke-color: rgba(255, 187, 0, 0.947);
+                -webkit-text-stroke-width: 0.5px; */
+            }
+            /* .Nasi-Goreng-Jawa-Teks-Container-2 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x4-Nasi-Goreng-Jawa-Teks-Container-2 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            /* .Es-Teh-Teks-Container-2 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x4-Es-Teh-Teks-Container-2 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            .paket-keluarga {
+                color: rgba(255, 250, 250, 0.974);
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                margin-left: 30px;
+                background-color: rgba(0, 0, 0, 0.899);
+                max-width: 256px;
+                padding-left: 10px;
+                white-space: nowrap;
+                border-radius: 10px;
+                /* -webkit-text-stroke-color: rgba(255, 187, 0, 0.947);
+                -webkit-text-stroke-width: 0.5px; */
+            }
+            .paket-partner {
+                color: rgba(255, 250, 250, 0.974);
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                margin-left: 30px;
+                background-color: rgba(0, 0, 0, 0.899);
+                max-width: 240px;
+                padding-left: 10px;
+                white-space: nowrap;
+                border-radius: 10px;
+                /* -webkit-text-stroke-color: rgba(0, 0, 0, 0.947);
+                -webkit-text-stroke-width: 0.5px; */
+            }
+            .paket-gacor {
+                color: rgba(255, 250, 250, 0.974);
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                margin-left: 30px;
+                background-color: rgba(0, 0, 0, 0.899);
+                max-width: 210px;
+                padding-left: 10px;
+                /* -webkit-text-stroke-color: rgba(255, 187, 0, 0.947);
+                -webkit-text-stroke-width: 0.5px; */
+                white-space: nowrap;
+                border-radius: 10px;
+            }
+        .mix-container {
+            margin-left: 100px;
+        }
+        .slogan-restoran {
+            font-size: 20px;
+            margin-left: 1px;
+            left: 30px;
+            color: rgba(247, 242, 242, 0.899);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+                -webkit-text-stroke-width: 0.333px;
+                color: rgba(234, 177, 91, 0.899);
+                white-space: nowrap;
+                display: flex;
+                padding: auto;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* .Nasi-Goreng-Jawa-Teks-Container-3 {
+            color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x1-Nasi-Goreng-Jawa-Teks-Container-3 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            /* .Nasi-Pepes-Ayam-Teks-Container-3 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x1-Nasi-Pepes-Ayam-Teks-Container-3 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            /* .Es-Susu-Gula-Aren-Teks-Container-3 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x1-Es-Susu-Gula-Aren-Teks-Container-3 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            /* .Es-Susu-Cincau-Teks-Container-3 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x1-Es-Susu-Cincau-Teks-Container-3 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            /* .Mie-Goreng-Jawa-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x2-Mie-Goreng-Jawa-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            /* .Nasi-Goreng-Jawa-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x2-Nasi-Goreng-Jawa-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            /* .Sop-Ikan-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x2-Sop-Ikan-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            /* .Nasi-Pepes-Ayam-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x2-Nasi-Pepes-Ayam-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            /* .Es-Jeruk-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x4-Es-Jeruk-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            /* .Es-Susu-Gula-Aren-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x2-Es-Susu-Gula-Aren-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            /* .Es-Susu-Cincau-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            } */
+            /* .x2-Es-Susu-Cincau-Teks-Container-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } */
+            .nama-banner-3 {
+            color: rgba(255, 0, 0, 0.9);
+            -webkit-text-stroke-color: rgba(255, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+            margin-left: 10px;
+            margin-top: -30px;
+                bottom: 20px;
+            z-index: 1;
+            max-width: 500px;
+        }
+        .harga-banner-3 {
+            margin-left: 395px;
+            margin-top: 200px;
+            color: rgba(0, 0, 0, 0.899);
+            text-decoration: line-through red;
+            font-size: 20px;
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.947);
+            -webkit-text-stroke-width: 0.75px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgba(255, 255, 255, 0.921);
+            bottom: 30px;
+            border-radius: 2px;
+            max-width: 120px;
+        }
+        .harga-banner-diskon-3 {
+                position: relative;
+                margin-top: 45px;
+                bottom: 40px;
+                right: -370px;
+                font-size: 30px;
+                color: rgba(255, 255, 255, 0.899);
+                -webkit-text-stroke-color: #ffffff;
+                -webkit-text-stroke-width: 0.333px;
+                background-color: rgba(0, 0, 0, 0.755);
+                max-width: 150px;
+                padding-left: 10px;
+                text-decoration: underline rgba(255, 255, 255, 0.899);
+                border-radius: 10px;
+                padding-right: 10px;
+            }
+            .nama-banner-4 {
+                color: rgba(255, 0, 0, 0.9);
+            -webkit-text-stroke-color: rgba(255, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+            right: 20px;
+            margin-left: 10px;
+            margin-top: -8px;
+                bottom: 20px;
+            z-index: 1;
+            justify-content: left;
+        }
+        .harga-banner-4 {
+            margin-left: 400px;
+            margin-top: 200px;
+            color: rgba(0, 0, 0, 0.899);
+            text-decoration: line-through red;
+            font-size: 20px;
+            white-space: nowrap;
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.947);
+            -webkit-text-stroke-width: 0.75px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgba(255, 255, 255, 0.921);
+            bottom: 30px;
+            border-radius: 2px;
+        }
+        .harga-banner-diskon-4 {
+                position: relative;
+                right: -372px;
+                top: -20px;
+                font-size: 30px;
+                color: rgba(255, 255, 255, 0.899);
+                -webkit-text-stroke-color: #ffffff;
+                -webkit-text-stroke-width: 0.333px;
+                background-color: rgba(0, 0, 0, 0.755);
+                max-width: 150px;
+                padding-left: 10px;
+                text-decoration: underline rgba(255, 255, 255, 0.899);
+                border-radius: 10px;
+                padding-right: 10px;
+            }
+            .selamat-datang {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(87, 20, 20, 0.923);
+    font-size: 20px;
+    margin-top: 75px;
+    margin-left: 37.6%;
+    background-color: rgba(186, 156, 142, 0.899);
+    background-size: cover;
+    max-width: 305px;
+    border: solid rgba(244, 244, 250, 0.899);
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 50px;
+    -webkit-text-stroke-color: rgba(255, 187, 0, 0.947);
+    -webkit-text-stroke-width: 0.5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.962);
+    animation: Animasi-Memudar 2s ease;
+    }
+                
+        @keyframes Animasi-Memudar {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+    }
+.selamat-datang h4 {
+    overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret 0.5s step-end infinite;
+    padding-left: 0;
+    max-width: 250px;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+.beranda {
+    animation: beranda 10s ease;
+}
+@keyframes beranda {
+    0%, 50% {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    60%, 100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.menu {
+    animation: menu 10s ease;
+}
+@keyframes menu {
+    0%, 60% {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    70%, 100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@media screen and (min-width: 1201px) {
+    .menuButton {
+        display: none;
+}
+}
+.jarak-1 {
+    padding-bottom: 1000px;
+    opacity: 0%;
+}
+        @media screen and (max-width: 1200px)  {
+            .jarak-1 {
+    padding-bottom: 0;
+    opacity: 0%;
+            }
+            body {
+                background-color: rgba(228, 209, 209, 0.9);
+                background-size: 20px 8px cover;
+                overflow-x: hidden;
+                margin: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .navbar {
+                width: 90%;
+                background-color: rgba(179, 153, 153, 0.9);
+                background-size: cover;
+                height: 95px;
+                position: sticky;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between; 
+                align-items: center;
+                padding: 0 20px;
+                margin-left: 15px;
+                margin-top: 20px;
+                z-index: 1000;
+            }
+            .logo-restoran {
+                display: flex;
+                color: #ffffff;
+            }
+            .logo-restoran h2 {
+                margin-left: 10px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .header {
+                display: flex;
+                align-items: center;
+                z-index: 10000;
+            }
+            .logo-restoran img {
+                border-radius: 100%;
+                margin-top: 3px;
+                margin-right: 20px;
+                width: 70px;
+                height: 70px;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.962);
+            }
+            .container a {
+                color: #ffffff;
+                padding-left: 20px; 
+                text-decoration: none;
+                position: 0 auto;
+                z-index: 999;
+            }
+            .header a {
+                color: white;
+                padding: 10px;
+                background-color: blue;
+                display: inline-block;
+                margin-right: 25px;
+                border-radius: 5px;
+                text-decoration: none;
+                padding-right: 20px;
+                z-index: 999;
+            }
+            .header a:last-child {
+                margin-right: 70px;
+            }
+            .header a:hover {
+                color: #888888;
+                background-color: antiquewhite;
+            }
+            .text-judul-restoran-alibaba {
+                font-size: 20px;
+                max-width: 330px;
+                margin-right: 20px;
+                top: 20px;
+                padding-right: 0;
+                justify-content: left;
+                text-align: left;
+                margin-top: 20px;
+                -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+                -webkit-text-stroke-width: 0.333px;
+                color: rgba(255, 8, 8, 0.899);
+            }
+            .slogan-restoran {
+                font-size: 15px;
+                -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+                -webkit-text-stroke-width: 0.333px;
+                color: rgb(241, 239, 238);
+            }
+            .menuButton {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 13%;
+                margin-right: 20px;
+                color: #090909;
+                width: 3.5em;
+                height: 3.5em;
+                border-radius: 0.5em;
+                background: #171717;
+                border: 1px solid #171717;
+                transition: all .3s;
+                box-shadow: inset 4px 4px 12px #3a3a3a,
+                            inset -4px -4px 12px #000000;
+                z-index: 10001;
+            }
+            .menuButton:hover {
+                border: 1px solid black;
+            }
+            .menuButton:active {
+                color: #666;
+                box-shadow: 6px 6px 12px #3a3a3a,
+                            -6px -6px 12px #000000;
+            }
+            input[type = "checkbox"] {
+                display: none;
+                visibility: hidden;
+            }
+            .menuButton span {
+                width: 30px;
+                height: 4px;
+                background: rgb(200,200,200);
+                border-radius: 100px;
+                transition: 0.3s ease;
+            }
+            input[type]:checked ~ span.top {
+                transform: translateY(290%) rotate(45deg);
+                width: 40px;
+            }
+            input[type]:checked ~ span.bot {
+                transform: translateY(-270%) rotate(-45deg);
+                width: 40px;
+                box-shadow: 0 0 10px #495057;
+            }
+            input[type]:checked ~ span.mid {
+                transform: translateX(-20px);
+                opacity: 0;
+            }
+            .header {
+                display: none;
+            }
+            .header.active {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                top: 95px;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.8);
+                z-index: 10000;
+            }
+            .header.active a {
+                margin: 20px 0;
+            }
+            .menuButton {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            .header a {
+                text-align: center;
+                width: 145px;
+                padding-right: 13.2px;
+            }
+            .nama-banner {
+                margin-left: 20px;
+                margin-top: 140px;
+                bottom: 20px;
+                padding-top: 0;
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-size: 15px;
+                
+            }
+            .harga-banner { 
+                margin-left: 20px;
+                margin-top: 20px;
+                color: rgba(255, 153, 0, 0.899);
+                text-decoration: line-through red;
+                font-size: 20px;
+                margin-bottom: 225px;
+            }
+            .harga-banner-diskon {
+                position: relative;
+                margin-top: 100px;
+                right: -270px;
+                font-size: 30px;
+                color: rgba(250, 250, 250, 0.899);
+                -webkit-text-stroke-color: #ffffff;
+                -webkit-text-stroke-width: 0.333px;
+                background-color: rgba(0, 0, 0, 0.755);
+                max-width: 150px;
+                padding-left: 10px;
+                text-decoration: underline rgba(255, 255, 255, 0.899);
+                border-radius: 10px;
+            }
+            .Nasi-Goreng-Jawa-Teks {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            .x2-Nasi-Goreng-Jawa-Teks {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .Es-Jeruk-Teks {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            .x2-Es-Jeruk-Teks {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .paket-bestie {
+                color: rgba(255, 21, 0, 0.974);
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                margin-left: 20px;
+            }
+            .container-banner {
+                background-image: url("lindah-4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 65%;
+            height: 250px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            margin-left: 0px;
+            margin-top: 100px;
+            border-radius: 15px;
+            margin-right: 0;
+            z-index: 1;
+        }
+        .container-banner-2 {
+            padding-left: 0px;
+        }
+        .container-banner:hover {
+            color: rgba(255, 255, 255, 0.974);
+            opacity: 100%;
+        }
+        .selamat-datang {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(87, 20, 20, 0.923);
+    font-size: 20px;
+    margin-top: 75px;
+    margin-left: 16.6%;
+    background-color: rgba(186, 156, 142, 0.899);
+    background-size: cover;
+    max-width: 305px;
+    border: solid rgba(244, 244, 250, 0.899);
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.962);animation: animasi-memudar 2s ease;
+        }
+                
+        @keyframes animasi-memudar {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+.selamat-datang h4 {
+    overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret 0.5s step-end infinite;
+    padding-left: 0;
+    max-width: 250px;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+.nama-banner-3 {
+    color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+            margin-left: 30px;
+            margin-top: 140px;
+                bottom: 20px;
+            z-index: 1;
+            font-size: 18px;
+        }
+        .harga-banner-3 {
+            margin-left: 30px;
+            margin-bottom: 225px;
+            color: rgba(255, 153, 0, 0.899);
+            text-decoration: line-through red;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .harga-banner-diskon-3 {
+                position: relative;
+                top: -248.1px;
+                right: -280px;
+                font-size: 30px;
+                color: rgba(255, 255, 255, 0.899);
+                -webkit-text-stroke-color: #ffffff;
+                -webkit-text-stroke-width: 0.333px;
+                background-color: rgba(0, 0, 0, 0.755);
+                max-width: 150px;
+                padding-left: 10px;
+                text-decoration: underline rgba(255, 255, 255, 0.899);
+                border-radius: 10px;
+            }
+            .nama-banner-4 {
+                color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+            margin-right: 30px;
+            left: 20px;
+            margin-top: 140px;
+            bottom: 20px;
+            z-index: 1;
+            font-size: 15px;
+            max-width: 5000px;
+        }
+        .harga-banner-4 {
+            margin-left: 30px;
+            margin-bottom: 225px;
+            color: rgba(255, 153, 0, 0.899);
+            text-decoration: line-through red;
+            font-size: 20px;
+            margin-top: 50px;
+        }
+        .harga-banner-diskon-4 {
+                position: relative;
+                top: -250.1px;
+                right: -265px;
+                font-size: 30px;
+                color: rgba(255, 255, 255, 0.899);
+                -webkit-text-stroke-color: #ffffff;
+                -webkit-text-stroke-width: 0.333px;
+                background-color: rgba(0, 0, 0, 0.755);
+                max-width: 150px;
+                padding-left: 10px;
+                text-decoration: underline rgba(255, 255, 255, 0.899);
+                border-radius: 10px;
+}
+.container-banner {
+            background-image: url("lindah-4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 450px;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            margin-left: -40px;
+            margin-top: 80px;
+            border-radius: 15px;
+            margin-right: 0;
+            z-index: 1;
+            
+        }
+        .container-banner-2 {
+            background-image: url("lindah-1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 460px;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            margin-left: -40px;
+            margin-top: 450px;
+            border-radius: 15px;
+            margin-right: 0;
+            z-index: 1;
+        }
+        .container-banner-3 {
+            background-image: url("lindah-2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 450px;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            margin-left: -40px;
+            margin-top: 830px;
+            border-radius: 15px;
+            margin-right: 0;
+            z-index: 1;
+        }
+        .container-banner-4 {
+            background-image: url("lindah-3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 450px;
+            height: 330px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            margin-left: -40px;
+            margin-top: 1220px;
+            border-radius: 15px;
+            margin-right: 0;
+            z-index: 1;
+        }
+        .container-banner .container-banner-2 .container-3 .container-4 {
+            position: relative;
+            flex-direction: column;
+            display: flex;
+        }
+.nama-banner-2 {
+    color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.962);
+            -webkit-text-stroke-width: 0.333px;
+            margin-right: 30px;
+            left: 20px;
+            margin-top: 140px;
+                bottom: 20px;
+            z-index: 1;
+            font-size: 20px;
+            max-width: 5000px;
+        }
+        .harga-banner-2 {
+            margin-left: 30px;
+            margin-bottom: 225px;
+            color: rgba(255, 153, 0, 0.899);
+            text-decoration: line-through red;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .harga-banner-diskon-2 {
+                position: relative;
+                bottom: 238.1px;
+                right: -280px;
+                font-size: 30px;
+                color: rgba(255, 255, 255, 0.899);
+                -webkit-text-stroke-color: #ffffff;
+                -webkit-text-stroke-width: 0.333px;
+                background-color: rgba(0, 0, 0, 0.755);
+                max-width: 150px;
+                padding-left: 10px;
+                text-decoration: underline rgba(255, 255, 255, 0.899);
+                border-radius: 10px;
+                padding-right: 10px
+        }
+    }  
+@media screen and (min-width: 1201px) {
+    .menuButton {
+        display: none;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-restoran">
+            <img class="logo-restoran" src="logo-restoran.webp" alt="logo" width="50px" height="50px">
+            <h2 class="text-judul-restoran-alibaba">
+                <span style="--i:1" class="text-judul-i-1">R</span>
+                <span style="--i:2" class="text-judul-i-2">e</span>
+                <span style="--i:3" class="text-judul-i-3">s</span>
+                <span style="--i:4" class="text-judul-i-4">t</span> 
+                <span style="--i:5" class="text-judul-i-5">o</span>
+                <span style="--i:6" class="text-judul-i-6">r</span>
+                <span style="--i:7" class="text-judul-i-7">a</span>
+                <span style="--i:8" class="text-judul-i-8">n</span>
+                <span style="--i:9" class="text-judul-i-9"> </span>
+                <span style="--i:10" class="text-judul-i-10">A</span>
+                <span style="--i:11" class="text-judul-i-11">l</span>
+                <span style="--i:12" class="text-judul-i-12">i</span>
+                <span style="--i:13" class="text-judul-i-13">b</span>
+                <span style="--i:14" class="text-judul-i-14">a</span>
+                <span style="--i:15" class="text-judul-i-15">b</span>
+                <span style="--i:16" class="text-judul-i-16">a</span>
+                <br><div class="slogan-restoran">100% Khas Asli Indonesia</div></h2>
+        </div>
+        <div class="header">
+            <a href="index.html" class="beranda">Beranda</a>
+            <a href="menu.html" class="menu">Menu</a>
+            <!-- <a href="about.html" class="about">Tentang Kami</a> -->
+        </div>
+        <label class="menuButton" for="check">
+            <input type="checkbox" id="check">
+            <span class="top"></span>
+            <span class="mid"></span>
+            <span class="bot"></span>
+        </label>
+    </div>
+    <div class="selamat-datang">
+        <h4 class="teks-selamat-datang">Selamat Datang🤗!!!</h4>
+    </div>
+    <div class="mix-container">
+    <a href="paket-bestie.html" class="container-banner">
+        <div class="pamflet-banner">
+            <h1 class="paket-bestie">Paket Bestie</h1>
+            <h1 class="harga-banner">RP. 76.000</h1>
+            <h2 class="harga-banner-diskon">RP. 65.000</h2>
+            <h2 class="nama-banner">Nasi Goreng Jawa x2 + Es Teh x2</h2>
+        </div>
+    </a>
+    <a href="paket-keluarga.html" class="container-banner-2">
+        <div class="pamflet-banner">
+            <h1 class="paket-keluarga">Paket Keluarga</h1>
+            <h1 class="harga-banner-2">RP. 176.000</h1>
+            <h2 class="harga-banner-diskon-2">RP. 155.000</h2>
+            <h2 class="nama-banner-2"> Nasi Bakar x4 + Es Teh x2 + Es Jeruk x2</h2>
+        </div>
+    </a>
+    <a href="paket-partner.html" class="container-banner-3">
+        <div class="pamflet-banner">
+            <h1 class="paket-partner">Paket Partner</h1>
+            <h1 class="harga-banner-3">RP. 141.000</h1>
+            <h2 class="harga-banner-diskon-3">RP. 130.000</h2>
+            <h2 class="nama-banner-3"> Lontong Sate Ayam x3 + Es teh x1 + Es Jeruk x1 + Es Cao Susu x1</h2>
+        </div>
+    </a>
+    <a href="paket-gacor.html" class="container-banner-4">
+        <div class="pamflet-banner">
+            <h1 class="paket-gacor">Paket Gacor</h1>
+            <h1 class="harga-banner-4">RP. 234.000</h1>
+            <h2 class="harga-banner-diskon-4">RP. 215.000</h2>
+            <h2 class="nama-banner-4">Nasi Ikan Bakar x5 + Es teh x3 + Es Jeruk x2</h2>
+            </div>
+        </a>
+        </div>
+</div>
+<div class="jarak-1">Restoran Alibaba</div>
+    <script>
+        document.getElementById('check').addEventListener('change', function() {
+            document.querySelector('.header').classList.toggle('active');
+        });
+        document.querySelector('.selanjutnya-3').addEventListener('click', function() {
+});
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

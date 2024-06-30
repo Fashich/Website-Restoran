@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paket Partner</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            /* overflow-y: hidden; */
+            width: 100%;
+            height: 100%;
+        }
+        .logo-restoran img {
+            margin-left: 30px;
+            margin-top: 30px;
+            border-radius: 50%;
+        }
+        .container-banner {
+            background-image: url("lindah-2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 345px;
+            height: 210px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            margin-left: 840px;
+            margin-top: 30px;
+            border-radius: 15px;
+            margin-right: 0;
+            z-index: 1;
+        }
+        .harga-banner {
+            margin-left: 235px;
+            margin-top: 110px;
+            color: rgba(0, 0, 0, 0.899);
+            text-decoration: line-through red;
+            font-size: 15px;
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.947);
+            -webkit-text-stroke-width: 0.75px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            bottom: 30px;
+            border-radius: 2px;
+            white-space: nowrap;
+            background-color: rgb(255, 255, 255);
+            width: 90px;
+            height: 18px;
+        }
+        .harga-banner-diskon {
+            position: relative;
+            margin-top: 45px;
+            bottom: 40px;
+            right: -85px;
+            margin-left: 140px;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.899);
+            -webkit-text-stroke-color: #ffffff;
+            -webkit-text-stroke-width: 0.333px;
+            background-color: rgba(0, 0, 0, 0.755);
+            max-width: 100px;
+            padding-left: 5px;
+            padding-right: 5px;
+            text-decoration: underline rgba(255, 255, 255, 0.899);
+            border-radius: 10px;
+            white-space: nowrap;
+        }
+        .paket-partner {
+            color: rgba(255, 255, 255, 0.974);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 25px;
+            -webkit-text-stroke-color: rgba(255, 255, 255, 0.947);
+            -webkit-text-stroke-width: 0.5px;
+            background-color: rgba(0, 0, 0, 0.947);
+            font-size: 20px;
+            margin-top: 25px;
+            max-width: 160px;
+            padding-right: 5px;
+            text-align: center;
+            justify-content: center;
+            padding-left: 5px;
+            white-space: nowrap;
+            border-radius: 5px;
+        }
+        /* .container-banner-2 {
+            background-image: url("lindah-3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 345px;
+            height: 210px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            margin-left: 900px;
+            margin-top: 10px;
+            border-radius: 15px;
+            margin-right: 0;
+            z-index: 1;
+        } */
+        /* .harga-banner {
+            margin-left: 235px;
+            margin-top: 110px;
+            color: rgba(0, 0, 0, 0.899);
+            text-decoration: line-through red;
+            font-size: 15px;
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.947);
+            -webkit-text-stroke-width: 0.75px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            bottom: 30px;
+            border-radius: 2px;
+            white-space: nowrap;
+            background-color: rgb(255, 255, 255);
+            width: 90px;
+            height: 18px;
+        }
+        .harga-banner-diskon-2 {
+            position: relative;
+            margin-top: 45px;
+            bottom: -85px;
+            right: -85px;
+            margin-left: 140px;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.899);
+            -webkit-text-stroke-color: #ffffff;
+            -webkit-text-stroke-width: 0.333px;
+            background-color: rgba(0, 0, 0, 0.755);
+            max-width: 100px;
+            padding-left: 5px;
+            padding-right: 5px;
+            text-decoration: underline rgba(255, 255, 255, 0.899);
+            border-radius: 10px;
+            white-space: nowrap;
+        }
+        .nasi-ikan-bakar {
+            color: rgba(255, 255, 255, 0.974);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 25px;
+            -webkit-text-stroke-color: rgba(255, 255, 255, 0.947);
+            -webkit-text-stroke-width: 0.5px;
+            background-color: rgba(0, 0, 0, 0.947);
+            font-size: 20px;
+            margin-top: 25px;
+            max-width: 180px;
+            padding-right: 5px;
+            text-align: center;
+            justify-content: center;
+            padding-left: 5px;
+            white-space: nowrap;
+            border-radius: 5px;
+        } */
+        .form {
+            background-color: rgba(228, 209, 209, 0.9);
+            width: 1080px;
+            height: 330px;
+            margin-left: 200px;
+            margin-top: 180px;
+            border-radius: 5px;
+        }
+        .nama-paket {
+            font-size: 23px;
+        }
+        .isi-form {
+            margin-left: 200px;
+            bottom: 200px;
+        }
+        .nama-paket-2 {
+            margin-top: -10px;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.947);
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+            -webkit-text-stroke-width: 0.2px;
+            margin-left: -50px;
+        }
+        .isi-menu-2 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.947);
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+            -webkit-text-stroke-width: 0.2px;
+            margin-left: -50px;
+            margin-top: -50px;
+        }
+        .isi-menu-3 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.947);
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+            -webkit-text-stroke-width: 0.2px;
+            margin-left: -50px;
+            margin-top: -50px;
+        }
+        .isi-menu {
+            margin-top: 10px;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.947);
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+            -webkit-text-stroke-width: 0.2px;
+            margin-left: -50px;
+        }
+        .harga-paket-2 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.947);
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+            -webkit-text-stroke-width: 0.2px;
+            margin-left: -50px;
+        }
+        .tambah-pesanan-div {
+            width: 160px;
+            height: 25px;
+            background-color: rgb(85, 0, 255);
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border-radius: 5px;
+            padding-top: 5px;
+            margin-left: 440px;
+            margin-top: -40px;
+        }
+        .tambah-pesanan-div:hover {
+            background-color: rgb(85, 50, 255);
+            color: rgb(232, 232, 232);
+            cursor: pointer;
+        }
+        .tambah-pesanan-a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin-left: 13px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .tambah-pesanan-a:hover {
+            color: rgb(232, 232, 232);
+        }
+        .konfirmasi-pesanan-div {
+            width: 180px;
+            height: 25px;
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border-radius: 5px;
+            padding-top: 5px;
+            margin-left: 940px;
+            margin-top: -30px;
+            white-space: nowrap;
+        }
+        .konfirmasi-pesanan-div:hover {
+            background-color: rgb(255, 15, 15);
+            color: rgb(232, 232, 232);
+            cursor: pointer;
+        }
+        .konfirmasi-pesanan-a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin-left: 33px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 14px;
+        }
+        .konfirmasi-pesanan-a:hover {
+            color: rgb(232, 232, 232);
+        }
+        .jarak-teks {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="form-paket-partner">
+        <div class="container-banner-2">
+            <div class="pamflet-banner-2">
+                <h1 class="nasi-ikan-bakar">Nasi Ikan Bakar</h1>
+                <h2 class="harga-banner-diskon-2">RP. 38.000</h2>
+            </div>
+        </div> -->
+        <div class="container-banner">
+            <div class="pamflet-banner">
+                <h1 class="paket-partner">Paket Partner</h1>
+                <h1 class="harga-banner">RP. 141.000</h1>
+                <h2 class="harga-banner-diskon">RP. 130.000</h2>
+            </div>
+        </div>
+        <div class="form">
+            <a href="index.html" class="logo-restoran">
+                <img class="logo-restoran" src="logo-restoran.webp" alt="logo" width="75px" height="75px">
+            </a>
+            <div class="isi-form">
+                <div class="isi-menu-2"><strong>Menu yang dipesan:</strong></div>
+                <div class="nama-paket-2"><ol><li>Paket Partner (Paket 3)</li>
+                    <li>Nasi Ikan Bakar</li></ol></div>
+                <div class="isi-menu"><li><strong>Isi Pesanan: </strong><br>Lontong Sate Ayam <strong>x3</strong>, <span class="jarak-teks"></span>Es Teh <strong>x1</strong>, Es Jeruk <strong>x1</strong>, <br>Es Cao Susu <strong>x1</strong>, Nasi Ikan Bakar <strong>x1</strong></li></div>
+                <!-- <div class="isi-menu-3"><li>Es Cao Susu <strong>x1</strong></li></div> -->
+                <div class="harga-paket-2"><strong>Harga: </strong>168.000</div>
+            </div>
+        </div>
+        <div class="pemilihan">
+            <div class="opsi-pemilihan-1">
+                <div class="tambah-pesanan-div">
+                <a href="tambah-pesanan-partner-1.html" class="tambah-pesanan-a">Tambah Pesanan</a>
+                </div>
+            </div>
+            <div class="opsi-pemilihan-2">
+            <div class="konfirmasi-pesanan-div">
+            <a href="konfirmasi-pesanan.html" class="konfirmasi-pesanan-a">Konfirmasi Pesanan</a>
+            </div>
+        </div>
+            </div>
+    </div>
+</body>
+</html>
